@@ -1,0 +1,25 @@
+#job{
+    margin-top: 20px;
+}
+
+.card{
+    border: none;
+}
+
+#card{
+    background-color: #7e8ffe32;
+}
+
+#container{
+    border: 1px solid #dddddd;
+}
+
+.header-container{
+    background-color: rgba(84, 84, 163, 0.13);
+}
+
+
+#job-c{
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
