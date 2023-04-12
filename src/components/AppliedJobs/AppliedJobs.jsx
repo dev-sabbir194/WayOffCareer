@@ -3,22 +3,38 @@ import { Link } from 'react-router-dom';
 import './AppliedJobs.css'
 
 const AppliedJobs = () => {
-  const [appliedJobs, setAppliedJobs] = useState([]);
+ const [appliedJobs, setAppliedJobs] = useState([]);
 
   useEffect(() => {
-    const appliedJobsArray = [];
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key.includes('appliedJobs')) {
-        const jobData = JSON.parse(localStorage.getItem(key));
-        appliedJobsArray.push(jobData);
+    // Function to retrieve applied jobs from local storage
+    const getAppliedJobsFromLocalStorage = () => {
+      const appliedJobsArray = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key.includes('appliedJobs')) {
+          const jobData = JSON.parse(localStorage.getItem(key));
+          appliedJobsArray.push(jobData);
+        }
       }
-    }
-    
+      return appliedJobsArray;
+    };
+
+    // Get applied jobs from local storage on initial render
+    const appliedJobsArray = getAppliedJobsFromLocalStorage();
     setAppliedJobs(appliedJobsArray);
+
+    // Add event listener to detect changes to local storage
+    const handleStorageChange = () => {
+      const updatedAppliedJobsArray = getAppliedJobsFromLocalStorage();
+      setAppliedJobs(updatedAppliedJobsArray);
+    };
+    window.addEventListener('storage', handleStorageChange);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
   }, []);
-
-
   
   return (
     <div className='container'>
