@@ -7,11 +7,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import JobCategory from './components/JobCategory/JobCategory';
 import Home from './components/Layout/Home';
-import Statistics from './components/Statistics/Statistics';
-import Header from './components/Header/Header';
-import Feature from './components/Feature/Feature';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs'
 import Blog from './components/Blog/Blog'
 import JobDetail from './components/JobDetail/JobDetail';
@@ -46,10 +42,10 @@ const router = createBrowserRouter([
         path: 'ViewDetails/:id',
         element: <JobDetail></JobDetail>,
       },
-      {
-    path: '/AppliedJobs',
-    element: <AppliedJobs></AppliedJobs>,
-    }
+          {
+        path: '/AppliedJobs',
+        element: <AppliedJobs></AppliedJobs>,
+        }
 
 
     ]

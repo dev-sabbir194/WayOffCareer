@@ -5,6 +5,9 @@ import './JobDetail.css';
 import jobData from '../../jobData.json';
 import bgImage from '../../assets/All Images/Vector-1.png'
 import { Link, useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const JobDetail = () => {
   const { id } = useParams();
@@ -22,15 +25,17 @@ const handleApplyNowClick = () => {
   const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs')) || [];
   const selectedJobIndex = appliedJobs.findIndex(jobDataObj => jobDataObj.id === job.id);
   if (selectedJobIndex !== -1) {
-    // update job data if already applied
-    appliedJobs[selectedJobIndex].data = job;
+    // job already applied for
+    setIsApplied(true);
+    toast.error('You have already applied for this job.');
   } else {
     // add new job data if not applied before
     const jobDataObj = { id: job.id, data: job };
     appliedJobs.push(jobDataObj);
+    localStorage.setItem('appliedJobs', JSON.stringify(appliedJobs));
+    setIsApplied(true);
+    toast.success('You have successfully applied for this job!');
   }
-  localStorage.setItem('appliedJobs', JSON.stringify(appliedJobs));
-  setIsApplied(true);
 }
 
 
@@ -101,12 +106,11 @@ const handleApplyNowClick = () => {
                   </h4>
                 </p>
                         
-              
-                        <Link to="/AppliedJobs">
+    
                         <button type="button" className="btn btn-info w-100" id="view" onClick={handleApplyNowClick}>
                           Apply Now
                         </button>
-                      </Link>
+            
 
 
                                       
