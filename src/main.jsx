@@ -26,16 +26,16 @@ const router = createBrowserRouter([
       },
     
       {
-        path: 'Statistics',
+        path: '/Statistics',
         element: <Assingment></Assingment>
       },
       
       {
-        path: 'Blog',
+        path: '/Blog',
         element: <Blog></Blog>
       },
       {
-        path: 'home',
+        path: '/home',
         element: <App></App>,
       },
       {

@@ -8,7 +8,7 @@ import JobCategory from './components/JobCategory/JobCategory';
 import Footer from './components/Footer/Footer';
 import Feature from './components/Feature/Feature';
 import Assingment from './components/Assingment/Assingment';
-import { ToastContainer } from 'react-toastify';
+
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Header></Header>
       <JobCategory></JobCategory>
       <Feature></Feature>
-      <ToastContainer />
+      
       
     </div>
   )

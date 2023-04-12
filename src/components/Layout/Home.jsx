@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import Feature from '../Feature/Feature';
 
 
+
 const Home = () => {
     return (
         <div>

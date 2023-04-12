@@ -28,7 +28,7 @@ const Navbar = () => {
       </ul>
     </div>
     <div className="d-flex justify-content-end">
-      <button className="btn btn-primary" id='button' type="button">Star Applying</button>
+      <button className="btn btn-primary" id='button' type="button">Start Applying</button>
     </div>
   </div>
   </nav>
