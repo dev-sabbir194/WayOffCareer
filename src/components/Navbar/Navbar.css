@@ -1,0 +1,20 @@
+#button {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+    width: 170px;
+    height: 40px;
+    font-weight: 800;
+    color:#FFFFFF;
+}
+.navbar-brand{
+    font-weight: 800;
+    color: #1A1919;
+}
+
+.nav-item a{
+    font-weight: 500;
+    color: #757575;
+}
+.nav-item a:hover{
+    color: #9873FF;
+}
