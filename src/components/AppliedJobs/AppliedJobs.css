@@ -1,0 +1,113 @@
+.review-item {
+    width: 580px;
+    height: auto;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding: 8px 25px 8px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.review-item .card-title {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+}
+
+.review-details {
+    flex-grow: 1;
+}
+
+
+.review-details p {
+    margin: 0 15px;
+}
+
+.review-item img {
+    width: 91px;
+    height: 91px;
+    border-radius: 6px;
+}
+
+.orange-text {
+    color: #FF9900;
+}
+
+/* delete button styles */
+.btn-delete {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: rgba(235, 87, 87, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-icon {
+    color: #EB5757;
+    font-size: 27px;
+}
+
+
+#view {
+    background-color: #9873FF;
+    font-weight: 800;
+    color: #FFFFFF;
+    width: 150px;
+    height: 40px;
+    
+}
+
+
+#button1 {
+    background-color: #ffffff;
+    color: #9873FF;
+    font-weight: 500;
+}
+
+#button2 {
+    background-color: #ffffff;
+    color: #9873FF;
+    font-weight: 500;
+}
+
+#button1:hover {
+    background-color: #000000;
+}
+
+#button2:hover {
+    background-color: #000000;
+
+}
+
+
+.review-item .img-style{
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+}
+
+.review-item img {
+    width: 17px;
+    height: 22px;
+    border-radius: 1px;
+}
+
+
+
+.product-title{
+    font-weight: 800;
+    color: #474747;
+    
+}
+.company-Name{
+    font-weight: 600;
+  color: #757575;
+}
+
+.review-details p{
+    margin: 0;
+}
