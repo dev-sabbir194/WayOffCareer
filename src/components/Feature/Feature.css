@@ -1,0 +1,53 @@
+#title{
+    font-weight: 800;
+    color: #1A1919;
+}
+#description{
+    font-weight: 500;
+    color: #757575;
+}
+
+.card-title{
+    font-weight: 800;
+    color: #474747;
+}
+.card-text{
+    font-weight: 600;
+    color: #757575;
+}
+#button1{
+    background-color: #ffffff;
+    color: #9873FF;
+    font-weight: 500;
+}
+#button2{
+    background-color: #ffffff;
+    color: #9873FF;
+    font-weight: 500;
+}
+#button1:hover{
+    background-color: #000000;
+}
+#button2:hover{
+    background-color: #000000;
+
+}
+
+.salry{
+    font-weight: 600;
+    color: #757575;
+}
+.location{
+    font-weight: 600;
+    color: #757575;
+}
+#view{
+    background-color: #9873FF;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+#show{
+    background-color: #9873FF;
+    font-weight: 800;
+    color: #FFFFFF;
+}
